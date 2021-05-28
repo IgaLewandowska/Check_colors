@@ -1,2 +1,2 @@
 import Pillow 
-from desktop.Heimdall.static.colors.py import generate_colors
+from colors.py import generate_colors
