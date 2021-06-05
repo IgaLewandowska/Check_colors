@@ -6,7 +6,7 @@ import glob
 from pathlib import Path
 
 def get_colors(image):
-	dominant_color = ColorThief(image).get_color(quality=1)
+	dominant_color = ColorThief(image).get_palette(color_count=3, quality=3)
 	return dominant_color
 
 #print (get_colors('blockchains/polygon/info/logo.png'))
@@ -26,6 +26,7 @@ def main():
 		if name == 'info':
 			name = str(i).split('/')[-3]
 		tmp = {name: color}	
+		print(tmp)
 		colors_list.append(tmp)
 	print(colors_list)	
 
