@@ -5,3 +5,23 @@
 	font-family: monospace;
 
 }
+
+.holder_default {
+    width:500px; 
+    height:150px; 
+    border: 3px solid #ccc;
+}
+
+#holder.hover { 
+    width:400px; 
+    height:150px; 
+    border: 3px solid #0c0 !important; 
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
